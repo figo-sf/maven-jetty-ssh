@@ -1,0 +1,1 @@
+# maven-jetty-ssh
