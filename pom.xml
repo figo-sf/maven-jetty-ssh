@@ -213,6 +213,15 @@
             <artifactId>asm-commons</artifactId>
             <version>5.0.3</version>
         </dependency>
+
+        <!-- 用户浏览器代理工具类 -->
+        <!-- https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils -->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>1.20</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>ssh</finalName>
