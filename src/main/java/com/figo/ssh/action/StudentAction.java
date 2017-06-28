@@ -1,19 +1,22 @@
 package com.figo.ssh.action;
 
-import java.util.Map;
-
 import com.figo.ssh.service.StudentService;
-import org.apache.struts2.interceptor.RequestAware;
-
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.RequestAware;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
 
+import java.util.Map;
+@Controller
+@Scope("prototype")
 public class StudentAction extends ActionSupport implements RequestAware {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+	@Autowired
 	private StudentService studentService;
 	
 	public void setStudentService(StudentService studentService) {

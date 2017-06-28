@@ -12,7 +12,7 @@ public class Student {
 	private String name; //Can't be alerted
 	private Date birth;
 	@ManyToOne(targetEntity=School.class)
-	@JoinColumn(name="schoolid",referencedColumnName="school_id")
+	@JoinColumn(name="school_id",referencedColumnName="school_id")
 	private School school;
 
 

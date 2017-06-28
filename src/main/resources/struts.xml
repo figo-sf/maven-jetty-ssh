@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC	"-//Apache Software Foundation
 //DTD Struts Configuration 2.3//EN"
-	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	"struts-2.3.dtd">
 <struts>
 	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
 	<constant name="struts.devMode" value="true"></constant>
@@ -10,7 +10,7 @@
     	<action name="">  
     <result>/index.jsp</result>  
 </action> 
-    	<action name="stu-*" class="studentAction" method="{1}">
+    	<action name="stu-*" class="com.figo.ssh.action.StudentAction" method="{1}">
     		<result name="list">/WEB-INF/views/stu-list.jsp</result>
     	</action>
     </package>    
